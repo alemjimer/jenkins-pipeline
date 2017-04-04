@@ -1,2 +1,4 @@
-echo 'Hallo'
+Pipeline {
+  echo 'Hallo'
+}
 
