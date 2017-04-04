@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-pipeline {
+node {
   echo 'Hallo'
   
   echo 'Halllllllo'
