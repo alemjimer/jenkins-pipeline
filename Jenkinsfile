@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-node ('docker'){
+node ('simple'){
   echo 'Hallo'
   
   echo 'Halllllllo'
