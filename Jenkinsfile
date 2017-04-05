@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-node ('simple'){
+node (){
   echo 'Hallo'
   
   echo 'Halllllllo'
