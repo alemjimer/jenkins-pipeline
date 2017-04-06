@@ -8,6 +8,9 @@ node (){
     }
   }
   stage('Build') {
+    dir('hallo') {
+      sh 'mvn clean install'
+    }
     echo 'Hallo'
     echo 'Halllllllo'
   }
