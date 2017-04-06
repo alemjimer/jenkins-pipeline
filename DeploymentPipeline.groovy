@@ -13,6 +13,7 @@ node (){
   }
   
   stage('Performance Test') {
+    archive 'hallo'
     dir('hallo') {
       build job: 'tests-mvn-job'
     }
