@@ -13,6 +13,6 @@ node (){
   }
   
   stage('Performance Test') {
-    job build: 'tests-mvn-job'
+    build job: 'tests-mvn-job'
   }
 }
