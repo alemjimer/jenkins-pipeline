@@ -1,6 +1,6 @@
 
 node (){
-  
+  deleteDir()
   sh 'mkdir hallo'
   stage ('checkout') {
     dir('hallo') {
