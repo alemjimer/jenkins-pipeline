@@ -1,8 +1,12 @@
 
 node (){
-  echo 'Hallo'
   
-  echo 'Halllllllo'
+  stage('Build') {
+    echo 'Hallo'
+    echo 'Halllllllo'
+  }
   
-  job build: 'tests-mvn-job'
+  stage('Performance Test') {
+    job build: 'tests-mvn-job'
+  }
 }
