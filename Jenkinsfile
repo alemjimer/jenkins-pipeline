@@ -1,7 +1,5 @@
 #!/usr/bin/env groovy
 node (){
-  echo 'Hallo'
-  
-  echo 'Halllllllo'
+  sh 'mvn clean install'
 }
 
