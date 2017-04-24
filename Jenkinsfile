@@ -8,7 +8,7 @@ node (){
 
     stage('Build') {
         sh '/Users/ahmedlemjimer/Documents/work/apache-maven-3.3.9/bin/mvn clean install'
-        step([$class: 'ArtifactArchiver', artifacts: '**/target/*.jar', fingerprint: true])
+        step([$class: 'ArtifactArchiver', artifacts: '**/*.jar', fingerprint: true])
     }
 
     stage ('job2') {
