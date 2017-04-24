@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>de.alem.jenkins.pipeline</groupId>
-    <artifactId>pipeline-test</artifactId>
+    <artifactId>pipeline-test2</artifactId>
     <version>1.6-SNAPSHOT</version>
     <packaging>jar</packaging>
 

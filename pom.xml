@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.alem.jenkins.pipeline</groupId>
     <artifactId>pipeline-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <github.maven.repository>file:///Users/ahmedlemjimer/Documents/work/dev/jenkins-pipeline/maven-repository/</github.maven.repository>
+    </properties>
+    <scm>
+        <connection>scm:git:https://github.com/alemjimer/jenkins-pipeline.git</connection>
+        <developerConnection>scm:git:https://github.com/alemjimer/jenkins-pipeline.git</developerConnection>
+        <url>https://github.com/alemjimer/jenkins-pipeline.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.10</version>
+        </dependency>
+    </dependencies>
+    
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>repository</id>
+            <name>Local-Repo</name>
+            <url>file:///Users/ahmedlemjimer/Documents/work/dev/jenkins-pipeline/maven-repository</url>
+            <layout>default</layout>
+        </repository>
+
+        <snapshotRepository>
+            <id>maven-snapshot-repository</id>
+            <url>${github.maven.repository}</url>
+        </snapshotRepository>
+   </distributionManagement>
     <modules>
         <module>pipelinetest</module>
+        <module>pipelinetest2</module>
     </modules>
+
 
 </project>
